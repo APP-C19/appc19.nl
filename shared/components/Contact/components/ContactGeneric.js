@@ -34,10 +34,10 @@ const Confirmation = github => {
         <p>
           While waiting for access take a look at the{' '}
           <StyledLinkInText
-            href="https://oxygene-space.github.io/docs/ShortIntroduction.html"
+            href="http:///www.linkedin.com/company/42702524"
             target="_blank"
             rel="noopener noreferrer">
-            reference guide
+            LinkedIN
           </StyledLinkInText>
           .
         </p>

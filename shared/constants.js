@@ -10,7 +10,7 @@ export const contactData = {
   addressUrl: 'https://goo.gl/maps/TdqgwxXU6HH2',
   twitter: '@SpronQ',
   twitterUrl: 'https://twitter.com/spronq',
-  linkedIn: 'Qollabor',
-  linkedInUrl: 'https://nl.linkedin.com/company/qollabor',
-  email: 'info@qollabor.com'
+  linkedIn: 'C19-APP',
+  linkedInUrl: 'https://www.linkedin.com/company/42702524',
+  email: 'info@spronq.com'
 };

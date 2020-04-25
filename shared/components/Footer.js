@@ -19,6 +19,6 @@ const StyledSpan = styled.div`
 
 export default () => (
   <Footer>
-    <StyledSpan>SpronQ BV &#169; 2020</StyledSpan>
+    <StyledSpan>Open Source COVID-19 Testing Support APP &#169; 2020</StyledSpan>
   </Footer>
 );
