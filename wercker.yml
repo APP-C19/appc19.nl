@@ -1,0 +1,86 @@
+# x
+box:
+    id: node:12
+    username: $DOCKER_HUB_USERNAME
+    password: $DOCKER_HUB_PASSWORD
+dev:
+  steps:
+#    - script:
+#      name: install yarn
+#      code: |
+#        npm install -g yarn
+    - script:
+      name: set yarn cache
+      code: |
+        export YARN_CACHE=$WERCKER_CACHE_DIR/yarn
+    - script:
+      name: install dependencies
+      code: |
+        HOME=$YARN_CACHE yarn
+    - internal/watch:
+        code: yarn run dev
+        reload: true
+build:
+  steps:
+#    - script:
+#      name: install yarn
+#      code: |
+#        npm install -g yarn
+    - script:
+      name: set yarn cache
+      code: |
+        export YARN_CACHE=$WERCKER_CACHE_DIR/yarn
+    - script:
+      name: install dependencies
+      code: |
+        HOME=$YARN_CACHE yarn
+    - script:
+      name: build
+      code: |
+        yarn build
+ 
+deploy:
+  box:
+    id: spronq/website:pm2-docker-alpine-curl-8
+    username: $DOCKER_HUB_USERNAME
+    password: $DOCKER_HUB_PASSWORD
+  steps:
+    - internal/docker-push:
+        username: $DOCKER_HUB_USERNAME
+        password: $DOCKER_HUB_PASSWORD
+        tag: $DOCKER_HUB_TAG
+        repository: $DOCKER_HUB_REPO
+        ports: $DOCKER_PORT
+        working-dir: /pipeline/source
+        cmd: "pm2-docker --raw start pm2.json"
+        registry: $DOCKER_HUB_REGISTRY
+
+deploy-to-cafiennewww:
+  box:
+    id: node:6.9.1
+  steps:
+    - add-to-known_hosts:
+        hostname: www.spronq.com
+        fingerprint: fe:20:46:b3:4b:32:e4:8a:a1:d3:5f:d2:86:a1:e2:3f
+    - add-ssh-key:
+        keyname: WEBDEPLOYKEY
+    - script:
+        name: start_clean_redeploy !
+        code: |
+          echo "start clean redeploy cafienne.io"
+          ssh -o StrictHostKeyChecking=no webdeploy@spronq-demo.spronq.com "/home/webdeploy/bin/clean-redeploy-cafienne"
+
+deploy-to-cafienne-preview:
+  box:
+    id: node:6.9.1
+  steps:
+    - add-to-known_hosts:
+        hostname: www.spronq.com
+        fingerprint: fe:20:46:b3:4b:32:e4:8a:a1:d3:5f:d2:86:a1:e2:3f
+    - add-ssh-key:
+        keyname: WEBDEPLOYKEY
+    - script:
+        name: start_clean_redeploy !
+        code: |
+          echo "start clean redeploy cafienne.io preview"
+          ssh webdeploy@spronq-demo.spronq.com "/home/webdeploy/bin/clean-redeploy-cafienneio-preview"

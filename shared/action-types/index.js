@@ -1,0 +1,7 @@
+export const TOGGLE_MENU = 'TOGGLE_MENU';
+export const TOGGLE_VALID = 'TOGGLE_VALID';
+export const TOGGLE_VALID_REQ = 'TOGGLE_VALID_REQ';
+export const STORE_CONTACT = 'STORE_CONTACT';
+export const STORE_CONTACT_REQ = 'STORE_CONTACT_REQ';
+export const TOGGLE_FORM = 'TOGGLE_FORM';
+export const TOGGLE_FORM_REQ = 'TOGGLE_FORM_REQ';

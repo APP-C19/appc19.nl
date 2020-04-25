@@ -1,0 +1,10 @@
+{
+  "apps": [{
+    "name": "spronq.io",
+    "script": "server/index.js",
+    "env": {
+      "production": true,
+      "NODE_ENV": "production"
+    }
+  }]
+}
