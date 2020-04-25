@@ -44,13 +44,27 @@ export default () => (
             lockdown. 
           </p>
           <p>
-            In order to safely come out of this lockdown ntelligent solutions 
+            In order to safely come out of this lockdown intelligent solutions 
             such as tracking apps might be helpful. 
           </p>
            <p>
             C19-APP builds tooling to help against spreading the virus {' '}
-            Doing this, iwe buid apps to help in varios parts of the battle
+            Doing this, we buid apps to help in varios parts of the battle
           </p>
+           Our github repo is at {' '}
+           <StyledLinkInText
+              href="https://github.com/APP-C19"
+              target="_blank"
+              rel="noopener noreferrer">
+              APP-C19
+            </StyledLinkInText>
+            We have a slack channel at {' '}
+           <StyledLinkInText
+              href="https://APP-C19.slack.com"
+              target="_blank"
+              rel="noopener noreferrer">
+              APP-C19
+            </StyledLinkInText>
         </Text>
         <Image>
           <img
@@ -67,7 +81,7 @@ export default () => (
         <Text>
           <StyledH2>Community</StyledH2>
           <p>
-            Qollabor is open source and has an active community. This way we can
+            AppC19 is an open source app and has an active community. This way we can
             ensure that we have a continuous development for the product and a
             good focus on quality and interoperability.
           </p>
