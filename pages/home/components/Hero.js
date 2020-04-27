@@ -27,7 +27,7 @@ export default () => (
   <Hero>
     <GridContainer>
       <StyledH1>
-        together against COVID-19 <br />
+        Together against COVID-19 <br />
         with <StyledText>APP-C19</StyledText>
       </StyledH1>
     </GridContainer>
