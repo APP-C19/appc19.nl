@@ -37,19 +37,19 @@ export default () => (
     <Section>
       <FlexWrapper>
         <Text>
-          <StyledH2>C19-APP is an OpenSource initiative</StyledH2>
+          <StyledH2>APP-C19 is an OpenSource initiative</StyledH2>
           <p>
             In the current pandemic situation we need to join forces to 
             fight the virus. Currently a large number of coultries are in
             lockdown. 
           </p>
           <p>
-            In order to safely come out of this lockdown intelligent solutions 
-            such as tracking apps might be helpful. 
+            In order to safely come out of the lockdown intelligent solutions 
+            such as tracking apps or registration apps might be helpful. 
           </p>
            <p>
-            C19-APP builds tooling to help against spreading the virus {' '}
-            Doing this, we buid apps to help in varios parts of the battle
+            APP-C19 builds tooling to help against spreading the virus {' '}
+            Doing this, we buid apps to help in varios parts of the battle.
           </p>
            Our github repo is at {' '}
            <StyledLinkInText
@@ -81,8 +81,8 @@ export default () => (
         <Text>
           <StyledH2>Community</StyledH2>
           <p>
-            AppC19 is an open source app and has an active community. This way we can
-            ensure that we have a continuous development for the product and a
+            APP-C19 is an open source app and has an active community. This way we can
+            ensure that we have a continuous development for the product(s) and a
             good focus on quality and interoperability.
           </p>
         </Text>
