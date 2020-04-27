@@ -40,8 +40,8 @@ export default () => (
           <StyledH2>APP-C19 is an OpenSource initiative</StyledH2>
           <p>
             In the current pandemic situation we need to join forces to 
-            fight the virus. Currently a large number of coultries are in
-            lockdown. 
+            fight the virus. Currently a large number of countries are in
+            (partial) lockdown. 
           </p>
           <p>
             In order to safely come out of the lockdown intelligent solutions 
@@ -49,7 +49,7 @@ export default () => (
           </p>
            <p>
             APP-C19 builds tooling to help against spreading the virus {' '}
-            Doing this, we buid apps to help in varios parts of the battle.
+            Doing this, we buid apps to help in various parts of the battle.
           </p>
            Our github repo is at {' '}
            <StyledLinkInText
@@ -81,7 +81,7 @@ export default () => (
         <Text>
           <StyledH2>Community</StyledH2>
           <p>
-            APP-C19 is an open source app and has an active community. This way we can
+            APP-C19 is an Open Source app and has an active community. This way we can
             ensure that we have a continuous development for the product(s) and a
             good focus on quality and interoperability.
           </p>
@@ -101,7 +101,7 @@ export default () => (
         <StyledH2>Getting Started</StyledH2>
         <p>
           Now you want to get started right? Just fill out the form below and we
-          will grant you access to our Github repository.
+          will grant you write access to our Github repository.
         </p>
       </Text>
       <RequestForm />
