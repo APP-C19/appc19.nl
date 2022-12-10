@@ -36,7 +36,7 @@
     "body-parser": "^1.18.3",
     "compression": "^1.7.3",
     "es6-promise": "^4.2.5",
-    "express": "^4.16.3",
+    "express": "^4.17.3",
     "express-pino-logger": "^4.0.0",
     "helmet": "^3.14.0",
     "isomorphic-unfetch": "^3.0.0",
