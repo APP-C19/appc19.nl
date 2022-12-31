@@ -40,7 +40,7 @@
     "express-pino-logger": "^4.0.0",
     "helmet": "^3.14.0",
     "isomorphic-unfetch": "^3.0.0",
-    "next": "^7.0.1",
+    "next": "^13.1.1",
     "next-redux-saga": "^3.0.0",
     "next-redux-wrapper": "^2.0.0",
     "node-slack": "0.0.7",
